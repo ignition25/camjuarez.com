@@ -1,1 +1,19 @@
+<% content_for :sidebar do %>
+	<h2>About</h2>
+		<img src="/avi.jpg" class="img-polaroid">
+	<small>What's up visitors, I'm Cam. I'm a Computer Science major at the University of Oregon. I love to travel and have visited France, Germany, Belgium, Holland, Italy, Costa Rica and more. I worked as an intern for Amazon.com and developed a (SaaS) Visualization Tool for AmazonLocal's targeting team in summer of 2012. I spent fall '12 studying at UC San Diego. I'm working as an intern with Google in summer of 2013 and would like to pursue graduate studies at Stanford University.</small>
+	<h2>Projects</h2>
+	<ul>
+		<li><%= link_to 'Camjuarez.com', root_path %></li>
+		<li><%= link_to 'Hypewav', 'http://hypewav.com' %></li>
+	</ul>
+
+<% end %>
 <h2>Feed</h2>
+<div class="posts">
+	<% @posts.each do |post| %>
+		<h4><%= post.title %></h4>
+		<%= post.entry %>
+		<br />
+	<% end %>
+</div>
