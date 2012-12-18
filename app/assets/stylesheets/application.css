@@ -32,6 +32,10 @@
 	margin: 0 0 5px 0;
 }
 
+.discussion{
+display:none;
+}
+
 .discussion > h3 {
 	color: #008500;
 }
