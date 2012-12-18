@@ -36,3 +36,20 @@
 .discussion > h3 {
 	color: #008500;
 }
+
+ul.projects-list{
+	color: #aaa;
+}
+
+ul.projects-list li a {
+	font-size: 17.5px;
+	margin: 0;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 20px;
+	text-rendering: optimizelegibility;
+}
+
+.note {
+	color: #aaa;
+}
