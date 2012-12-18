@@ -1,5 +1,6 @@
-<% content_for :og_tags do %>
+<% content_for :head do %>
 	<meta property="og:image" content="/avi.jpg"/>
+	<%= auto_discovery_link_tag(:rss, posts_url(format: "rss")) %>
 <% end %>
 
 <% content_for :sidebar do %>
@@ -17,7 +18,7 @@
 	<h2>Reasearch</h2>
 	Coming soon!
 <% end %>
-<h2>Feed</h2>
+<h2>Feed <%= link_to image_tag("/rss-icon-100x.png", :class => 'rss-icon-index'), posts_url(format: "rss") %></h2>
 <div class="posts">
 	<% @posts.each do |post| %>
 		<h4><%= link_to post.title, post %></h4>

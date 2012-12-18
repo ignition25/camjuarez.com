@@ -16,6 +16,27 @@
  	border-bottom: 1px solid #ccc;
  }
 
+ .rss-icon-index {
+ 	width: 34px;
+ 	height: 34px;
+ 	float:right;
+ 	opacity: .4;
+ 	filter: alpha(opacity=40); /* For IE8 and earlier */
+ }
+
+ .rss-icon-index:hover {
+ 	opacity: 1.0;
+ 	filter: alpha(opacity=100); /* For IE8 and earlier */
+ }
+
+ .rss-icon-index::after{
+ 	clear:both;
+ }
+
+  .rss-icon-index:after{
+ 	clear:both; /* For IE8 and earlier */
+ }
+
  .section{
  	display:none;
  	padding: 0 20px 20px 20px;
