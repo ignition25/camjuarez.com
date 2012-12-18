@@ -12,6 +12,10 @@
  *= require_tree .
  */
 
+ .section {
+ 	display:none;
+ }
+
  h1, h2, h3 {
  	border-bottom: 1px solid #ccc;
  }
