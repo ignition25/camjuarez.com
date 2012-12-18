@@ -1,5 +1,5 @@
  $(document).ready(function()
 {
     // fade in content.
-    $( '.discussion' ).delay("400").fadeIn();
+    $( '.discussion' ).delay("800").fadeIn();
 });
