@@ -25,3 +25,13 @@
 .posts {
 	margin: 20px 0 0 0;
 }
+
+.date-time{
+	font-size: 85%;
+	color: #aaa;
+	margin: 0 0 5px 0;
+}
+
+.discussion > h3 {
+	color: #008500;
+}

@@ -12,8 +12,8 @@
 <h2>Feed</h2>
 <div class="posts">
 	<% @posts.each do |post| %>
-		<h4><%= post.title %></h4>
-		<%= post.entry %>
+		<h4><%= link_to post.title, post %></h4>
+		<div class="date-time"><%= post.created_at.to_formatted_s(:long) %></div>
 		<br />
 	<% end %>
 </div>

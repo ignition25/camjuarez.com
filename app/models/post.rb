@@ -1,3 +1,4 @@
 class Post < ActiveRecord::Base
-  attr_accessible :entry, :title
+	include ActiveRecord::Timestamp
+  	attr_accessible :entry, :title
 end

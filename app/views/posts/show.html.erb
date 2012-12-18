@@ -1,15 +1,16 @@
-<p id="notice"><%= notice %></p>
-
+<% content_for :title do %>
+    <%= @post.title %> | Cam's Blog
+<% end %>
+<h2><%= @post.title %></h2>
 <p>
-  <b>Title:</b>
-  <%= @post.title %>
+  <%= @post.entry.html_safe %>
 </p>
 
-<p>
-  <b>Entry:</b>
-  <%= @post.entry %>
-</p>
+<div class="discussion">
+	<h3>Discussion</h3>
+</div>
 
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<% if user_signed_in? %>
+	<%= link_to 'Edit', edit_post_path(@post) %> |
+	<%= link_to 'Back', posts_path %>
+<% end %>
