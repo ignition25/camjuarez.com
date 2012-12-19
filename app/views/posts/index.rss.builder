@@ -8,7 +8,7 @@ xml.rss :version => "2.0" do
     @posts.each do |post|
       xml.item do
         xml.title post.title
-        xml.description post.entry
+        xml.description RedCloth.new(post.entry).to_html
         xml.pubDate post.created_at.to_s(:rfc822)
         xml.link post_url(post)
         xml.guid post_url(post)
