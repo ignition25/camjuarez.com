@@ -1,5 +1,5 @@
  $(document).ready(function()
 {
     // fade in content.
-    $( '.section' ).fadeIn();
+    $( '.section' ).fadeIn(200);
 });
