@@ -1,12 +1,12 @@
 class PostsController < ApplicationController
-  before_filter :authenticate_user!, :only => [:index, :new, :edit, :create, :update, :destroy]
+  before_filter :authenticate_user!, :only => [:new, :edit, :create, :update, :destroy]
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.all :order => "created_at DESC"
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { authenticate_user! } # index.html.erb
       format.json { render json: @posts }
       format.rss { } #index.rss.builder
     end
