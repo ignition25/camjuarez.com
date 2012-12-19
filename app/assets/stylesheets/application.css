@@ -16,6 +16,10 @@
  	border-bottom: 1px solid #ccc;
  }
 
+ textarea#post_entry{
+ 	width: 90%;
+ }
+
  .rss-icon-index {
  	width: 34px;
  	height: 34px;

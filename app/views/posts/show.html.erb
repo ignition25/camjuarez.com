@@ -5,7 +5,7 @@
 <h2><%= @post.title %></h2>
  <div class="date-time"><%= @post.created_at.to_formatted_s(:long) %></div>
 <p>
-  <%= @post.entry.html_safe %>
+  <%= raw RedCloth.new(@post.entry).to_html %>
 </p>
 
 <div class="discussion">
