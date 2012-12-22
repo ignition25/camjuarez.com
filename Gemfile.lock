@@ -32,6 +32,7 @@ GEM
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
     builder (3.0.4)
+    coderay (1.0.8)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -129,6 +130,7 @@ PLATFORMS
 
 DEPENDENCIES
   RedCloth (~> 4.2.9)
+  coderay (~> 1.0.8)
   coffee-rails (~> 3.2.1)
   devise
   friendly_id (~> 4.0.1)
