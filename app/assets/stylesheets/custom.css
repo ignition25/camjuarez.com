@@ -137,6 +137,7 @@ p.no-space{ margin: 0; }
 .CodeRay .class { color: #a7e040; }
 .CodeRay .key { color: #6bd9ed; }
 .CodeRay .value { color: #6bd9ed;}
+.CodeRay .inline-delimiter { color: #f62d73; }
 .CodeRay .type { color: #F62D73;}
 .CodeRay .float { color: #a385fc; }
 .CodeRay .string { color: #e5da7a; }
