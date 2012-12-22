@@ -1,5 +1,5 @@
 <% content_for :head do %>
-	<meta property="og:image" content="/avi.jpg"/>
+	<meta property="og:image" content="<%= "#{root_url}avi.jpg" %>"/>
 	<%= auto_discovery_link_tag(:rss, posts_url(format: "rss")) %>
 <% end %>
 
@@ -24,7 +24,7 @@
 <div class="posts">
 	<% @posts.each do |post| %>
 		<h4><%= link_to post.title, post %></h4>
-		<div class="date-time"><%= post.created_at.to_formatted_s(:long) %></div>
+		<div class="date-time"><%= post.category %> &middot; <%= post.created_at.to_date.to_formatted_s(:long) %></div>
 		<br />
 	<% end %>
 </div>

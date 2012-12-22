@@ -71,6 +71,51 @@ ul.projects-list li a {
   color: #aaa;
 }
 
+/* Sharing */
+
+.post-footer {
+  margin-bottom: 40px;
+  height: 90px;
+  position: relative;
+}
+
+.sharing{
+  -webkit-margin-before: 0 !important;
+  -webkit-margin-after: 0 !important;
+  position: absolute;
+  margin: 0;
+  bottom: 0px;
+  left: 0px;
+}
+
+.sharing li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#reddit-button {
+  position:relative;
+  bottom: .145em;
+}
+
+#fb-button {
+  position: relative;
+  bottom: -1px;
+}
+
+#tweet-button {
+  position: relative;
+  bottom: -4px;
+}
+
+#h-news {
+position: relative;
+bottom: -5px;
+}
+
+/* Textile */
+
 p.code-header{
   color: #000;
   padding-left: 10px;
@@ -81,10 +126,24 @@ p.code-header{
   background: #E0E0E0;
 }
 
-.CodeRay .comment { color: #75715f;}
+p.no-space{ margin: 0; }
+
+/* CodeRay syntax highlighting */
+
+.CodeRay .symbol { color: #a385fc; }
+.CodeRay .color { color: #a385fc; }
+.CodeRay .class { color: #a7e040; }
+.CodeRay .key { color: #6bd9ed; }
+.CodeRay .value { color: #6bd9ed;}
+.CodeRay .type { color: #F62D73;}
+.CodeRay .float { color: #a385fc; }
+.CodeRay .string { color: #e5da7a; }
+.CodeRay .comment { color: #75715f; }
 .CodeRay .keyword { color: #f62d73; }
+.CodeRay .entity { color: #f62d73; }
 .CodeRay .predefined-constant { color: #a7e040; }
 .CodeRay .function { color: #a7e040; }
+.CodeRay .constant { color: #a7e040;}
 .CodeRay .regexp .delimiter { color: #e5da7a; }
 .CodeRay .regexp .content { color: #e5da7a; }
 .CodeRay .regexp .inline { color: #e5da7a; }
