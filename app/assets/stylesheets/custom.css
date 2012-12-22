@@ -4,6 +4,8 @@ h1, h2, h3 {
   border-bottom: 1px solid #ccc;
  }
 
+ h3 { margin: 30px 0 10px 0; }
+
  textarea#post_entry{
   width: 90%;
  }
