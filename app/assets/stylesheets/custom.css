@@ -85,7 +85,8 @@ p.code-header{
   background: #E0E0E0;
 }
 
-.CodeRay .keyword { color: #f62d73 ; }
+.CodeRay .comment { color: #75715f;}
+.CodeRay .keyword { color: #f62d73; }
 .CodeRay .predefined-constant { color: #a7e040; }
 .CodeRay .function { color: #a7e040; }
 .CodeRay .regexp .delimiter { color: #e5da7a; }
