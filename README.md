@@ -7,5 +7,7 @@ out the code, if you have any questions I can usually be reached via twitter [@c
 I'm using Ruby on Rails paired with [Devise](https://github.com/plataformatec/devise) to allow for an admin CRUD (Create, Read,
 Update, Delete) interface for posts. The posts are written in textile markup using [RedCloth](http://redcloth.org/).
 
+Syntax highlighting for code snippets is done via a CodeRay hack I wrote for RedCloth explained here: [http://camjuarez.com/posts/syntax-highlighting](http://camjuarez.com/posts/syntax-highlighting)
+
 ## Deployment
 I've opted to deploy via [Heroku](http://www.heroku.com/) mostly out of convinience. 
