@@ -148,7 +148,7 @@ p.no-space{ margin: 0; }
 .CodeRay .function { color: #a7e040; }
 .CodeRay .constant { color: #6bd9ed;}
 .CodeRay .regexp .inline-delimiter { color: #e5da7a; }
-.CodeRay .regexp .char { color: #A385FC; }
+.CodeRay .regexp .char { color: #a385fc; }
 .CodeRay .regexp .delimiter { color: #e5da7a; }
 .CodeRay .regexp .content { color: #e5da7a; }
 .CodeRay .regexp .inline { color: #e5da7a; }
