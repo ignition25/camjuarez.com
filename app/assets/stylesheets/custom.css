@@ -85,21 +85,12 @@ p.code-header{
   background: #E0E0E0;
 }
 
-.CodeRay .an { color:#E7BE69 }                      /* html attribute */
-.CodeRay .c  { color:#BC9358; font-style: italic; } /* comment */
-.CodeRay .ch { color:#509E4F }                      /* escaped character */
-.CodeRay .cl { color:#FFF }                         /* class */
-.CodeRay .co { color:#FFF }                         /* constant */
-.CodeRay .fl { color:#A4C260 }                      /* float */
-.CodeRay .fu { color:#FFC56D }                      /* function */
-.CodeRay .gv { color:#D0CFFE }                      /* global variable */
-.CodeRay .i  { color:#A4C260 }                      /* integer */
-.CodeRay .il { background:#151515 }                 /* inline code */
-.CodeRay .iv { color:#D0CFFE }                      /* instance variable */
-.CodeRay .pp { color:#E7BE69 }                      /* doctype */
-.CodeRay .r  { color:#CB7832 }                      /* keyword */
-.CodeRay .rx { color:#A4C260 }                      /* regex */
-.CodeRay .s  { color:#A4C260 }                      /* string */
-.CodeRay .sy { color:#6C9CBD }                      /* symbol */
-.CodeRay .ta { color:#E7BE69 }                      /* html tag */
-.CodeRay .pc { color:#6C9CBD }                      /* boolean */
+.CodeRay .keyword { color: #f62d73 ; }
+.CodeRay .predefined-constant { color: #a7e040; }
+.CodeRay .function { color: #a7e040; }
+.CodeRay .regexp .delimiter { color: #e5da7a; }
+.CodeRay .regexp .content { color: #e5da7a; }
+.CodeRay .regexp .inline { color: #e5da7a; }
+.CodeRay .regexp .inline .delimiter { color: #e5da7a; }
+.CodeRay .regexp .inline .constant { color: #6bd9ed; }
+.CodeRay .regexp .modifier { color: #e5da7a; }
