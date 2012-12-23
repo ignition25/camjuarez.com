@@ -4,4 +4,9 @@ module ApplicationHelper
       	CodeRay.scan(CGI.unescapeHTML($5), $2).div(:css => :class)
       end
   end
+
+  def default_description
+  	"Cam Juarez is a computer science and math double major, software engineer, web dev, and music lover, 
+  	who enjoys sharing interesting findings and elegant solutions."
+  end
 end
