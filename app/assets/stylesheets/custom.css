@@ -73,6 +73,10 @@ ul.projects-list li a {
   color: #aaa;
 }
 
+img.star-rating-example {
+  height: 120px !important;
+}
+
 /* Sharing */
 
 .post-footer {
@@ -132,12 +136,13 @@ p.no-space{ margin: 0; }
 
 /* CodeRay syntax highlighting */
 
+.CodeRay .predefined { color: #f62d73; }
+.CodeRay .integer { color: #a385fc; }
 .CodeRay .symbol { color: #a385fc; }
 .CodeRay .color { color: #a385fc; }
 .CodeRay .class { color: #a7e040; }
 .CodeRay .key { color: #6bd9ed; }
 .CodeRay .value { color: #6bd9ed;}
-.CodeRay .inline-delimiter { color: #f62d73; }
 .CodeRay .type { color: #F62D73;}
 .CodeRay .float { color: #a385fc; }
 .CodeRay .string { color: #e5da7a; }
