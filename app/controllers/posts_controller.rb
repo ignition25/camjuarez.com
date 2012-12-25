@@ -16,6 +16,12 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @posts_hash = Hash.new
+    @current_index = 0
+    Post.all(:order => "created_at DESC").each_with_index do |item, index|
+      @posts_hash[index] = item
+      @current_index = index if item == @post
+    end
 
     respond_to do |format|
       format.html # show.html.erb
