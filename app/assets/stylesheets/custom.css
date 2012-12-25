@@ -180,13 +180,13 @@ p.no-space{ margin: 0; }
   transform: rotate(-90deg);
 }
 
-@media only screen and (max-width: 1360px) and (min-width: 1200px), (max-width: 1130px) and (min-width: 980px), (max-width: 919px) {
+@media only screen and (max-width: 1360px) and (min-width: 1200px), (max-width: 1140px) and (min-width: 980px), (max-width: 919px) {
   .prev_post, .next_post{
     display:none;
   }
 }
 
-@media only screen and (max-width: 1199px) and (min-width: 1130px), (max-width: 979px) and (min-width: 920px) {
+@media only screen and (max-width: 1199px) and (min-width: 1140px), (max-width: 979px) and (min-width: 920px) {
   .prev_post, .next_post{
     display:block;
   }
