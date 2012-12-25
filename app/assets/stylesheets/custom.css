@@ -134,6 +134,52 @@ p.code-header{
 
 p.no-space{ margin: 0; }
 
+.prev_post, .next_post {
+  padding: 50px;
+  text-align: center;
+  position: fixed;
+  width: 220px;
+  top: 45%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.prev_post:hover, .next_post:hover {
+  text-decoration: none;  
+}
+
+.prev_post::before, .next_post::before {
+  content: "";
+  background: url('/images/up_arrow.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 50%;
+  margin-left: -7px;
+  position: absolute;
+  top: 25px;
+  height: 10px;
+  width: 15px;
+}
+
+.next_post { 
+  right: -100px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.prev_post { 
+  left: -100px;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
 /* CodeRay syntax highlighting */
 
 .CodeRay .predefined { color: #f62d73; }

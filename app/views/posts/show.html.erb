@@ -52,3 +52,10 @@
 	<%= link_to 'Edit', edit_post_path(@post) %> |
 	<%= link_to 'Back', posts_path %>
 <% end %>
+
+<% if prev_post = pprev(@current_index) %>
+    <%= link_to prev_post.title, prev_post, :class => :prev_post, :title => "Previous Post: #{prev_post.title}" %>
+<% end %>
+<% if next_post = pnext(@current_index) %>
+    <%= link_to next_post.title, next_post, :class => :next_post, :title => "Next Post: #{next_post.title}" %>
+<% end %>
