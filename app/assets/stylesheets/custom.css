@@ -135,6 +135,7 @@ p.code-header{
 p.no-space{ margin: 0; }
 
 .prev_post, .next_post {
+  opacity: 0.8;
   padding: 50px;
   text-align: center;
   position: fixed;
