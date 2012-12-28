@@ -144,10 +144,16 @@ p.no-space{ margin: 0; }
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -ms-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
 }
 
 .prev_post:hover, .next_post:hover {
   text-decoration: none;  
+  opacity: 0.8 !important;
 }
 
 .prev_post::before, .next_post::before {
