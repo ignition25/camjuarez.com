@@ -125,7 +125,7 @@ bottom: -5px;
 p.code-header{
   color: #000;
   padding-left: 10px;
-  margin: 0;
+  margin: 25px 10px 0 10px;
   border-left: 1px solid rgba(0, 0, 0, 0.15);
   border-right: 1px solid rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -133,6 +133,8 @@ p.code-header{
 }
 
 p.no-space{ margin: 0; }
+
+.code { padding: 0 10px;}
 
 .prev_post, .next_post {
   opacity: 0.8;
@@ -187,7 +189,19 @@ p.no-space{ margin: 0; }
   transform: rotate(-90deg);
 }
 
-@media only screen and (max-width: 1360px) and (min-width: 1200px), (max-width: 1130px) and (min-width: 980px), (max-width: 919px) {
+@media all and (max-width: 1200px){
+  .prev_post, .next_post{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .span10 { width: 970px; }
+  .span7 { width: 670px; }
+  .span3 { width: 270px; }
+}
+
+/*@media only screen and (max-width: 1360px) and (min-width: 1200px), (max-width: 1130px) and (min-width: 980px), (max-width: 919px) {
   .prev_post, .next_post{
     display:none;
   }
@@ -198,7 +212,7 @@ p.no-space{ margin: 0; }
     display:block;
   }
 }
-
+*/
 
 /* CodeRay syntax highlighting */
 
