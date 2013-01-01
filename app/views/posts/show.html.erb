@@ -13,7 +13,7 @@
 <div class="post">
 
     <h2><%= @post.title %></h2>
-     <div class="date-time"><%= @post.category %> &middot; <%= @post.created_at.to_date.to_formatted_s(:long) %></div>
+     <div class="date-time"><%= @post.category %> &middot; <%= timeago @post.created_at %></div>
     <p>
       <%= raw (coderay(RedCloth.new(@post.entry).to_html)) %>
     </p>

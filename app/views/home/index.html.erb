@@ -27,7 +27,7 @@
 <div class="posts">
 	<% @posts.each do |post| %>
 		<h4><%= link_to post.title, post %></h4>
-		<div class="date-time"><%= post.category %> &middot; <%= post.created_at.to_date.to_formatted_s(:long) %></div>
+		<div class="date-time"><%= post.category %> &middot; <%= timeago post.created_at %></div>
 		<br />
 	<% end %>
 </div>
