@@ -1,0 +1,1 @@
+SITE_TITLE = "Cam's Developer Blog"
