@@ -4,6 +4,7 @@ gem 'rails', '3.2.8'
 gem 'friendly_id', '~> 4.0.1'
 gem "RedCloth", "~> 4.2.9"
 gem "coderay", "~> 1.0.8"
+gem "newrelic_rpm"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
