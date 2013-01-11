@@ -190,7 +190,6 @@ p.no-space{ margin: 0; }
   transform: rotate(-90deg);
 }
 
-<<<<<<< HEAD
 @media all and (max-width: 1200px){
   .prev_post, .next_post{
     display: none;
