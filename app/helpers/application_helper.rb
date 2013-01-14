@@ -28,6 +28,9 @@ module ApplicationHelper
         return "#{time_ago = time_ago.round}" + ((time_ago == 1) ? " minute ago" :  " minutes ago")
       end
       return "#{time_ago = time_ago.round}" + ((time_ago == 1) ? " hour ago" :  " hours ago")
+    elsif time_ago >= 30
+      time_ago /= 30
+      return "#{time_ago = time_ago.round}" + ((time_ago == 1) ? " month ago" :  " months ago")
     elsif time_ago == 1
       return "#{time_ago = time_ago.round} day ago"
     else
