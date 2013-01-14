@@ -203,13 +203,13 @@ p.no-space{ margin: 0; }
 }
 
 
-@media only screen and (max-width: 1139px) {
+@media only screen and (max-width: 1199px) {
   .prev_post, .next_post{
     display:none;
   }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1200px) {
   .prev_post, .next_post{
     display:block;
   }
