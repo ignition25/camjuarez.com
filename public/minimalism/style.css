@@ -1,0 +1,26 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	cursor:default;
+}
+
+.container{
+	width: 80%;
+	margin: 50px auto 0 auto;
+}
+
+h3.index-header{
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.photo-grid img.grid-photo{
+	width: 350px;
+	height: 350px;
+	margin: 10px;
+}
+
+label {
+	display: inline-block;
+	width: 5em;
+}
