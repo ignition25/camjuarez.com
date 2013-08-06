@@ -34,6 +34,17 @@ $(window).load(function(){
     };
     $(window).scroll(onScrollOrResize);
     $(window).resize(onScrollOrResize);
-    return onScrollOrResize();
+
+
+    $(document).keydown(function(e){
+      if (e.keyCode == 37){
+        //Left pressed.
+        window.open($('a.prev_post').attr('href'), '_self');
+      } else if (e.keyCode == 39){
+        //Right pressed
+        window.open($('a.next_post').attr('href'), '_self');      
+      }
+    });
+
   }
 });
