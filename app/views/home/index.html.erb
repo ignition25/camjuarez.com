@@ -12,14 +12,16 @@
 	<small>I'm Cam, a Computer Science and Math double-major at the University of Oregon. I love to travel and have visited France, Germany, Belgium, Holland, Italy, Costa Rica and more. I couldn't live without music, most summers I try to get a few days off to catch a festival. I worked as an intern for Amazon.com and developed a (SaaS) Visualization Tool for AmazonLocal's targeting team in summer of 2012. I spent fall '12 studying at UC San Diego. I'm working as an intern for Google in summer of 2013 and would like to pursue graduate studies at Stanford University.</small>
 	<h2>Projects</h2>
 	<ul class="projects-list">
+		<li><%= link_to 'Sigma Phi Epsilon', 'http://oregonsigep.com' %></li>
+		Official website of the University of Oregon SigEp chapter.
 		<li><%= link_to 'Roommate Matcher', 'https://www.duckshousing.com/roommates' %></li>
-		A matching system to make University of Oregon students' lives easier that I built for the <%= link_to 'Emerald Media Group', 'http://future.dailyemerald.com' %>.
+		A matching system to make University of Oregon students' lives easier, built for the <%= link_to 'Emerald Media Group', 'http://future.dailyemerald.com' %>.
 		<li><%= link_to 'Camjuarez.com', root_path %></li>
 		My personal blog.
-		<li><%= link_to 'TritonYelp', 'http://www.camjuar.com/posts/tritonyelp' %></li>
+		<li><%= link_to 'TritonYelp', 'http://camjuar.com/posts/tritonyelp' %></li>
 		A yelp-like system for students at UC San Diego (class project).
-		<li><%= link_to 'Hypewav', 'http://hypewav.com' %></li>
-		Created with DJ Alex Ries in hopes to share our musical tastes with the world.
+		<li><%= link_to 'Hypewav', 'http://hypewav.com', :class => 'disabled', :title => 'HypeWAV is no longer active.' %></li>
+		A music discovery service created with DJ Alex Ries in hopes to share our musical tastes with the world.
 	</ul>
 
 <% end %>
