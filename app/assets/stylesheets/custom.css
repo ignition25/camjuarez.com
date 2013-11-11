@@ -1,4 +1,89 @@
-/* Custom Styles */
+  /* Custom Styles */
+
+body {
+  background: url('/furley_bg.png');
+}
+
+@media (max-width: 979px){
+  .nav-collapse .nav>li>a:hover, .nav-collapse .dropdown-menu a:hover {
+    background-color: inherit !important;
+  }
+}
+
+.sidebar img {
+  max-width: 100%;
+}
+
+.span3 > img {
+  max-width: 80%;
+  display:block;
+  margin: 0 auto 12px auto;
+}
+
+.navbar-custom {
+    background-color:#33990E;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-nav > li > a:hover {
+  background-color: transparent;
+  color: yellow;
+}
+
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+a {
+  color: #33990E;
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -ms-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: #008500;
+}
+
+h4 {
+  margin: 0;
+}
+
+h2 {
+  font-size: 30.5px;
+}
+
+code{
+  color: #008500;
+}
+
+pre {
+  margin: 0 0 25px 0;
+  background: #232323;
+  color: #fff;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  border-radius: 0 0 4px 4px;
+  -webkit-border-radius: 0 0 4px 4px;
+  -moz-border-radius: 0 0 4px 4px;
+  font-size: 12px;
+  font-family: monospace;
+}
 
 a.disabled{
   cursor: default;
@@ -12,6 +97,10 @@ h1, h2, h3 {
 
  textarea#post_entry{
   width: 90%;
+ }
+
+ .post img {
+  max-width: 100%;
  }
 
  .rss-icon-index {

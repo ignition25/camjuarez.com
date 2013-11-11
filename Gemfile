@@ -20,7 +20,6 @@ group :assets do
 	# For Twitter Bootstrap
 	gem 'less-rails'
 	gem 'therubyracer'
-	gem 'twitter-bootstrap-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
