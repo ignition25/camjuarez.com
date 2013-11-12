@@ -1,1 +1,1 @@
-SITE_TITLE = "Cam's Developer Blog"
+SITE_TITLE = "Cam Juarez"
