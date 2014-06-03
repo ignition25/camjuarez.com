@@ -1,7 +1,7 @@
   /* Custom Styles */
 
 body {
-  background: url('/furley_bg.png');
+  /*background: url('/furley_bg.png');*/
 }
 
 @media (max-width: 979px){
@@ -65,7 +65,7 @@ h4 {
 }
 
 h2 {
-  font-size: 30.5px;
+  font-size: 38.5px;
 }
 
 code{
@@ -89,10 +89,6 @@ a.disabled{
   cursor: default;
 }
 
-h1, h2, h3 {
-  border-bottom: 1px solid #ccc;
- }
-
  h3 { margin: 30px 0 10px 0; }
 
  textarea#post_entry{
@@ -101,6 +97,23 @@ h1, h2, h3 {
 
  .post img {
   max-width: 100%;
+ }
+
+ .post {
+  font-size: 22px;
+  font-family: Georgia;
+  line-height: 1.5;
+  max-width: 700px;
+  display: block;
+  margin: auto;
+ }
+
+ .post p {
+  margin-bottom: 30px;
+ }
+
+ .post-content {
+  margin-bottom: 80px;
  }
 
  .rss-icon-index {
@@ -128,7 +141,7 @@ h1, h2, h3 {
   display:none;
   padding: 0 20px 20px 20px;
   background: white;
-  box-shadow: 0px 5px 10px 1px #DDD;
+ /* box-shadow: 0px 5px 10px 1px #DDD; */f
  }
 
 .posts {
@@ -169,7 +182,7 @@ img.star-rating-example {
 /* Sharing */
 
 .post-footer {
-  margin-bottom: 40px;
+  margin-bottom: 90px;
   height: 140px;
   position: relative;
 }
@@ -261,7 +274,7 @@ p.no-space{ margin: 0; }
 }
 
 .next_post { 
-  right: -100px;
+  right: -60px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -270,7 +283,7 @@ p.no-space{ margin: 0; }
 }
 
 .prev_post { 
-  left: -100px;
+  left: -60px;
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);

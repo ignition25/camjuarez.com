@@ -7,7 +7,7 @@
 <% end %>
 
 <% content_for :sidebar do %>
-	<h2>Bio</h2>
+	<h2>About</h2>
 		<img src="<%= root_url %>avi.jpg" class="img-thumbnail" style="margin-bottom: 20px;">
 	<p><small>Viewers,</small></p>
 	<p><small>
@@ -37,7 +37,7 @@
 	</ul>
 
 <% end %>
-<h2>Feed <%= link_to image_tag("/rss-icon-100x.png", :class => 'rss-icon-index'), posts_url(format: "rss") %></h2>
+<h2>Feed <!--<%= link_to image_tag("/rss-icon-100x.png", :class => 'rss-icon-index'), posts_url(format: "rss") %>--></h2>
 <div class="posts">
 	<% @posts.each do |post| %>
 		<h4><%= link_to post.title, post %></h4>
