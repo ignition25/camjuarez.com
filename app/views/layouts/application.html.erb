@@ -41,11 +41,12 @@
       </div>
     </div>
 
-<%= render :partial => 'layouts/flash', :locals => { :flash => flash } %>
-
 <% if content_for? :header_image %>
   <%= image_tag (yield :header_image).strip, class: "header-image", title: "Googleplex Patio by Cam Juarez" %>
 <% end %>
+
+<%= render :partial => 'layouts/flash', :locals => { :flash => flash } %>
+
 <div class="container section">
 	<div class="row">
 		<% if content_for? :sidebar %>
