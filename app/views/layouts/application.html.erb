@@ -42,7 +42,11 @@
     </div>
 
 <% if content_for? :header_image %>
-  <%= image_tag (yield :header_image).strip, class: "header-image", title: "Googleplex Patio by Cam Juarez" %>
+  <% header_image_title = "" %>
+  <% if content_for? :header_image_title %>
+    <% header_image_title = (yield :header_image_title).strip %>
+  <% end %>
+  <%= image_tag (yield :header_image).strip, class: "header-image", title: header_image_title %>
 <% end %>
 
 <%= render :partial => 'layouts/flash', :locals => { :flash => flash } %>

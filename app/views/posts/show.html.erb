@@ -20,6 +20,12 @@
     <%= @post.header_image %>
 <% end %>
 
+<% if !@post.header_image_title.nil? and @post.header_image_title.length > 0 %>
+    <% content_for :header_image_title do %>
+        <%= @post.header_image_title %>
+    <% end %>
+<% end %>
+
 <div class="post">
 
     <h2><%= @post.title %></h2>
