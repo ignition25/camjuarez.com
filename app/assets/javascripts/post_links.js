@@ -1,7 +1,7 @@
 $(window).load(function(){
   if ($('.post').length) {
     max_opacity = 0.8;
-    min_opacity = 0.4;
+    min_opacity = 0.6;
     $meta = $('.date-time');
     meta_bottom = $meta.offset().top + $meta.height();
     $discussion = $('.discussion');
@@ -17,9 +17,9 @@ $(window).load(function(){
       windowWidth = $window.width();
       windowScrollTop = $window.scrollTop();
       windowBottom = windowScrollTop + windowHeight;
-      if (windowScrollTop < 0) {
-        opacity = max_opacity;
-      } else if (windowScrollTop <= meta_bottom) {
+      if (windowScrollTop < meta_bottom) {
+        opacity = 0;
+      } else if (windowScrollTop = meta_bottom) {
         opacity = max_opacity - ((windowScrollTop / meta_bottom) * (max_opacity - min_opacity));
       } else if (windowBottom < discussion_top) {
         opacity = min_opacity;

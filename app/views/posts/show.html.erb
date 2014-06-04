@@ -2,12 +2,22 @@
     <%= @post.title %>
 <% end %>
 
+<% if !@post.header_image.nil? and @post.header_image.length > 0 %>
+    <% og_image = asset_path(@post.header_image.strip) %>
+<% else %>
+    <% og_image = "#{root_url}avi.jpg" %>
+<% end %>
+
 <% content_for :head do %>
-    <meta property="og:image" content="<%= "#{root_url}avi.jpg" %>"/>
+    <meta property="og:image" content="<%= og_image %>"/>
     <meta property="og:title" content="<%= @post.title %>" />
     <meta property="og:site_name" content="Cam Juarez's Blog" />
     <meta property="og:url" content="<%= post_url @post %>" />
     <meta property="og:description" content="<%= @post.entry.truncate 140, :omission => "..." %>" />
+<% end %>
+
+<% content_for :header_image do %>
+    <%= @post.header_image %>
 <% end %>
 
 <div class="post">
